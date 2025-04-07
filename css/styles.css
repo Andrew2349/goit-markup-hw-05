@@ -420,6 +420,9 @@ font-size: 16px;
 }
 
 
+.footer-link-wrap{
+    
+}
 .footer-list {
     display: flex;
     gap: 16px;
@@ -439,3 +442,284 @@ font-size: 16px;
 .footer-svg{
     fill:#f4f4fd;
 }
+
+.footer-form{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.footer-label{
+    font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        margin-bottom: 16px;
+        color: #fff;
+}
+
+.footer-input{
+    border: 1px solid #fff;
+        border-radius: 4px;
+        width: 264px;
+        height: 40px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        padding-left: 16px;
+        background-color: transparent;
+        color: #fff;
+        margin-right: 24px;
+        padding-top:8px;
+        padding-bottom: 8px;
+        outline: transparent;
+}
+
+.footer-input::placeholder{
+
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        color: #fff;
+}
+.footer-form-btn{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: #fff;
+        background-color: #4d5ae5;
+        border-radius: 4px;
+            padding: 8px 24px;
+            width: 165px;
+            height: 40px;
+            border-color: transparent;
+            padding-right: 64px;
+        cursor:pointer;
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+        
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+            background-color: #404BBF
+        }
+
+.footer-form-input-wrap{
+    display: flex;
+}
+
+.footer-form-icon{
+    fill: #fff;
+}
+
+.form-button-wrap{
+    position: relative;
+}
+
+.footer-form-icon{
+    position: absolute;
+    top:50%;
+    right:24px;
+    transform: translateY(-50%);
+}
+
+.backdrop{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.is-open{
+    opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+}
+
+.modal{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 408px;
+        min-height: 584px;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+            background-color: #fcfcfc;
+            border-radius: 4px;
+            padding: 72px 24px 24px 24px;
+            
+}
+
+.close-btn {
+    display: flex;
+    width: 24px;
+        height: 24px;
+        justify-content: center;
+        align-items: center;
+    border-radius: 100%;
+    background-color: #e7e9fc;
+    position: absolute;
+        top:24px;
+        right: 24px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn:hover , .close-btn:focus{
+    background-color: #404bbf;
+    fill:#fff;
+}
+
+
+
+.close-icon {}
+
+.modal-title{
+    font-weight: 500;
+        
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+        margin-bottom: 16px;
+}
+
+.modal-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form-input{
+    border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+        width: 100%;
+        padding-left:38px;
+        height: 40px;
+        outline: transparent;
+}
+
+.modal-form-input::placeholder{
+ 
+}
+
+.modal-form-input:focus-within{
+    border-color: #4d5ae5;
+}
+.modal-form-input:focus-within + .modal-form-icon {
+    fill: #4d5ae5;
+}
+
+.form-label{
+    font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+        margin-bottom: 4px;
+        display: inline-block;
+}
+
+.modal-input-wrap{
+    position: relative;
+}
+
+.modal-field{
+    margin-bottom: 8px;
+}
+.modal-form-icon{
+    position: absolute;
+    left:16px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.model-form-textarea{
+    resize: none;
+    width: 100%;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+        height: 120px;
+        padding-left: 16px;
+        font-size: 12px;
+        padding:8px 16px;
+            outline: transparent;
+}
+.model-form-textarea::placeholder{
+    line-height: 1.16667;
+        letter-spacing: 0.04em;
+        color: rgba(46, 47, 66, 0.4);
+}
+.modal-check{
+    
+}
+
+.modal-form-btn{
+    display: block;
+    margin: 0 auto;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: #fff;
+        width: 169px;
+            height: 56px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+            background-color: #4d5ae5;
+            border-color: transparent;
+            cursor: pointer;
+            border-radius: 4px;
+        margin-top: 24px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.modal-form-btn:hover, .modal-form-btn:focus{
+    background-color: #404bbf;
+}
+
+.modal-check-text{
+    font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+        display: flex;
+        align-items: center;
+        
+        a{
+            line-height: 1.33333;
+                text-decoration: underline;
+                text-decoration-skip-ink: none;
+                color: #4d5ae5;
+                margin-left: 4px
+        }
+        span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 16px;
+            height: 16px;
+            border-radius: 2px;
+                border: 1px solid rgba(46, 47, 66, 0.4);
+            fill:transparent;
+        margin-right: 8px;
+            }
+}
+
+.modal-check:checked + .modal-check-text span{
+    background-color: #404bbf;
+    fill: #fff;
+    border:none;
+}
+
+.modal-field:nth-child(4){
+    margin-bottom: 16px;
+}
+
